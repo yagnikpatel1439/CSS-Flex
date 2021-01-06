@@ -8,8 +8,13 @@
 </head>
 <body>
     <div class="wrapper">
+
+      <header class="top">
+        <h1><a href="http://#">What the Flexbox?</a></h1>
+      </header>
         
 <nav class="flex-nav">
+    <a href="#" class="toggleNav"> Menu</a>
     <ul>
       <li> 
         <a href="#"> Item1 </a>
@@ -30,19 +35,49 @@
         <a href="#"> Item6 </a>
       </li>
       <li class="social">
-          <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+          <a href="http://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
         </li>
         <li class="social">
             <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
           </li>
           <li class="social">
-            <a href="http://www.github.com"><i class="fab fa-github"></i></a>
+            <a href="http://www.github.com"><i class="fab fa-github-square"></i></a>
           </li>
           <li class="social">
-            <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="http://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
           </li>
     </ul>
   </nav>
+
+  <section class="hero">
+    <img src="https://thereader.mitpress.mit.edu/wp-content/uploads/2020/01/lede-1-700x420.jpg" alt="img">
+  </section>
+
+  <section class="details">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, nihil. Molestiae cupiditate expedita repellendus porro minima maxime molestias ullam laudantium labore exercitationem ab reprehenderit fugiat tenetur, nisi fugit delectus atque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, nihil.</p>
+  </section>
+
+  <section class="signup">
+    <form action="" class="signup">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <input type="submit" placeholder="Sign up!">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; Yagnik</p>
+  </footer>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $('.toggleNav').on('click', function() {
+          $('.flex-nav ul').toggleClass('open')
+        });
+      });
+    </script>
 </body>
 </html>
